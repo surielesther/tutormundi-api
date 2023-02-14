@@ -1,9 +1,6 @@
 import express from "express";
 
 const app = express();
-const cors = require("cors");
-
-app.use(cors());
 
 app.get("/feedback/:userReview", (req, res) => {
   const { userReview } = req.params;
