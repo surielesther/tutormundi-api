@@ -11,7 +11,7 @@ app.get("/feedback/:userReview", (req, res) => {
 
   console.log(userReview);
 
-  return res.status(201).json(stars);
+  return res.status(200).json(stars);
 });
 
 app.listen(3001, () => {
